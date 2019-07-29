@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sam Kuttenkuler</title>
+    <link rel="shortcut icon" type="image/png" href="../static/img/favicon.ico" ></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Horizontal Scroll-->
+
+    <link rel="stylesheet" href="{% static 'css/loader.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fullpage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/normalize.css%">
+
+</head>
+ <!--optional loader-->
+ <div id="loader-content">
+        <div id="load-wrapper">
+                 <div id="loader"></div>
+         </div>
+     </div>
+<body>
+
+
+
+
+    <!--Nav-->
+    <nav id="menu" >
+
+        <ul>
+            <a class="menu-links" data-menuanchor="about" href="#About">About</a>
+            <a class="menu-links" data-menuanchor="work" href="#Work">Work and Code</a>
+            <a class="menu-links" data-menuanchor="contact" href="#Contact">Contact</a>
+        </ul>
+    </nav>
+
+
+    <div id="fullpage">
+
+    <!--First Slide begins-->
+        <div class="section" id="aboutSection">
+                <div id="particles-js"></div>
+                    <div class="container" id="aboutcontainer">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="about-left">
+                            <img src="../static/img/75-feather-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="about-right">
+                                <H1>Software</H1>
+                                <H1 class="engineer-text">Engineer</H1>
+                                <p> Adamant pursuer and lover of programming, culture, music, fitness, and food.
+                                    I specialize in building dynamic and high functioning applications to the
+                                    specifications of my clients. My passion for learning and implementing different tools and technologies
+                                    drives me to create the best products whether web or mobile full stack. To see more please scroll down. </p>
+                                <div class="icons">
+                                    <div class="icon-block center clickable">
+                                        <a href="//www.github.com/skuttenkuler" target="_blank">
+                                            <i class="fa fa-github fa-4x">
+                                                <span class="screen-reader-text"></span>
+                                            </i>
+                                        </a>
+                                        <a href="//linkedin.com/in/skdev91" target="_blank">
+                                            <i class="fa fa-linkedin fa-4x" aria-hidden="true">
+                                                <span class="screen-reader-text"></span>
+                                            </i>
+                                        </a>
+                                        <a href="//facebook.com/sam.kuttenkuler" target="_blank">
+                                            <i class="fa fa-facebook-square fa-4x" aria-hidden="true">
+                                                <span class="screen-reader-text"></span>
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    <!--Second Slide Begins-->
+        <div class="section" id="workSection">
+            <div class="slide">
+                <div class="myWork">
+                    <div class="work-section">
+                        <ul class="work-grid">
+                            <li>
+                                <div class="work-box work-img-1">
+                                    <a href="//bentonray.com">
+                                        <div class="work-info">
+                                            <h3>Benton Ray</h3>
+                                            <button><a href="//www.github.com/skuttenkuler/bentonray" target="_blank">Code: bentonray.com</a></button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="work-box work-img-2">
+                                    <a href="//github.com/skuttenkuler/Flight-Plan/">
+                                        <div class="work-info">
+                                            <h3>Flight Plan</h3>
+                                            <button><a href="//github.com/skuttenkuler/Flight-Plan/"></a>React Native</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="work-box work-img-3">
+                                    <a href="//github.com/skuttenkuler/Nerdy-Talk/">
+                                        <div class="work-info">
+                                            <h3>Trivia App</h3>
+                                            <button><a href="//github.com/skuttenkuler/Nerdy-Talk/"></a>React/Firebase</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="work-box work-img-4">
+                                    <a href="//github.com/skuttenkuler/Star-Social/">
+                                        <div class="work-info">
+                                            <h3>Star Social</h3>
+                                            <button><a href="//github.com/skuttenkuler/Star-Social/"></a>Code: Star Social</button>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Last Page Begins-->
+        <div class="section" id="contactSection">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                        <div class="contact-left">
+                                                <H1>Thank you for visiting!</H1>
+                                                <p>If you wish to contact me,</p>
+                                                <p>please fill out this form!</p>
+                                                <p></p>
+                                                <p> - Cheers!</p>
+                                            </div>
+                                </div>
+                            <div class="col-md-6 col-sm-6">
+                                    <div class="contact-right">
+                                            <form method="POST">
+                                                <div class="form-group">
+
+                                                    <label><h4>Name:</h4> </label>
+                                                    <input class="form-control" type="text" placeholder="Your Name...">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label><h4>Email:</h4></label>
+                                                    <input class="form-control" type="email" placeholder="Your Email...">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label><h4>Message:</h4></label>
+                                                    <textarea class="form-control" cols="30" rows="5"></textarea>
+                                                </div>
+
+                                            </form>
+                                            <button href="#" class="btn btn-primary">Send</button>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"/>
+        <script type="text/javascript" src="{% static 'js/fullpage.scrollHorizontally.min' %}"></script>
+        <script type="text/javascript" src="{% static 'js/fullpage.extensions.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/fullpage.js' %}"></script>
+
+        <!--Loader intitializer-->
+     <script type="text/javascript">
+            //<![CDATA[
+                $(window).on('load', function() { // makes sure the whole site is loaded
+                    $('#loader').fadeOut(2); // will first fade out the loading animation
+                    $('#load-wrapper').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                    $('#aboutSection').delay(1000).css({'overflow':'visible'});
+                  })
+            //]]>
+        </script>
+
+
+
+    <script>new fullpage('#fullpage', {
+        //options here
+        anchors: ['About', 'Work', 'Contact'],
+        autoScrolling:true,
+        navigation:true,
+        scrollHorizontally: true,
+        scrollHorizontallyKey: 'A62E0E14-AA174519-B9DB1581-D62DE66C',
+        menu: '#menu',
+        lazyLoad: true,
+    });
+
+    //methods
+    fullpage_api.setAllowScrolling(true);</script>
+    <!--Particles-->
+    <script type="text/javascript" src="{% static 'js/particles.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/app.js'%}"></script>
+    <!--<script>
+            var count_particles, stats, update;
+            stats = new Stats;
+            stats.setMode(0);
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+            document.body.appendChild(stats.domElement);
+            count_particles = document.querySelector('.js-count-particles');
+            update = function() {
+              stats.begin();
+              stats.end();
+              if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+              }
+              requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+          </script>-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        window.sr = ScrollReveal({ reset:true});
+        sr.reveal('#menu',{
+            duration: 2000,
+            origin:'bottom',
+        });
+        sr.reveal('.about-left',{
+            duration: 2000,
+            origin: 'top',
+            distance: '300px',
+        });
+        sr.reveal('.about-right',{
+            duration: 2000,
+            origin: 'top',
+            distance: '300px',
+        });
+
+    </script>
+
+</body>
+</html>

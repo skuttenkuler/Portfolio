@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@font-face {
+    font-family: 'rust';
+    src: url('../fonts/rustico-regular.woff2') format('woff2'),
+         url('../fonts/rustico-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.intro{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background-image: url(../img/dark-evening.jpg);
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'rust';
+    color: rgba(255, 255, 255, 0.445);
+    font-size: 700%;
+    text-align: center;
+
+    -webkit-animation: fadein 10s;
+       -moz-animation: fadein 10s;
+        -ms-animation: fadein 10s;
+         -o-animation: fadein 10s;
+            animation: fadein 10s;
+}
+
+.btn {
+    border-radius: 10px;
+    font-family: 'rust';
+    color: rgba(255, 255, 255, 0.445);
+    font-size: 300%;
+    padding: 10px 20px;
+    border: solid rgba(255, 255, 255, 0.445) 3px;
+    text-transform: uppercase;
+    box-decoration-break: none;
+    -webkit-animation: fadein 25s;
+       -moz-animation: fadein 25s;
+        -ms-animation: fadein 25s;
+         -o-animation: fadein 25s;
+            animation: fadein 25s;
+
+}
+.btn:hover {
+    color: #ffffff;
+    border: solid #ffffff 3px;
+}
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+@-moz-keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
