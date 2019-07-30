@@ -149,7 +149,7 @@ html.fp-enabled,
     opacity: 1;
     line-height: 40px;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     transition: all .4s ease-in-out;
 
@@ -188,20 +188,29 @@ menu-links:nth-child(3):hover ~ .line {
 
 
 #aboutSection img{
-    width: 70%;
+    width: 100%;
     margin: center;
+    padding-top: 100px;
+    padding-left: 125px;
+}
+.about-right {
+    padding-top: 100px;
+}
+.engineer-text {
+    padding-left: 100px;
+    text-shadow: 2px 2px 1px #000;
 }
 .about-right h1 {
     font-family:  'rust';
     color: rgb(255, 255, 255);
-    text-shadow: 10px 10px 300px #000;
-    font-size: 400%;
+    text-shadow: 2px 2px 1px #000;
+    font-size: 450%;
 }
 .about-right p {
     font-family:  'Inknut Antiqua', serif;
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 300px #000;
-    font-size: 100%;
+    text-shadow: 2px 2px 1px #000;
+    font-size: 125%;
 }
 .fa-envelope {
     color: #fff
@@ -222,41 +231,50 @@ menu-links:nth-child(3):hover ~ .line {
     padding-left: 3em;
 }
 
-
-
 #contactSection {
-    background-image: url('../img/coding.jpeg');
+    background-image: url('../img/bridge.png');
     background-size: cover;
+}
+
+
+.contact-left{
+    padding-top: 100px;
+    padding-left: 50px;
+
 
 }
-.contact-right{
-    margin-top: 100px;
-    margin-left: 100px;
-}
-.contact-right h1 {
+.contact-left h1 {
     font-family:  'rust';
-    color:white;
-    text-shadow: 0px 0px 300px #000;
-    font-size: 375%;
+    color:rgba(255, 255, 255, 0.877);
+    text-shadow: 2px 2px 1px #000;
+    font-size: 400%;
+    padding-right: 100px;
 }
-.contact-right p {
+.contact-left p {
     font-family:  'Inknut Antiqua', serif;
     color:white;
-    text-shadow: 0px 0px 300px #000;
-    font-size: 100%;
+    font-size: 150%;
+    text-shadow: 2px 2px 1px #000;
 }
-.contact-left {
-    margin-top: 100px;
+.contact-right {
+
+    width: 500px;
+    padding-top: 200px;
+
 }
-.contact-left h4{
+.contact-right h4{
     font-family: 'Inknut Antiqua', serif;
     color: whitesmoke;
-    text-shadow: 0px 0px 300px #000;
+    text-shadow: 2px 2px 1px #000;
     font-size: 125%;
+}
+.contact-right button {
+    margin-left: 200px;
+    font-size: 150%;
 }
 
 #workSection{
-    background-color:darkgrey;
+    background-image: url('../img/sun.jpg');
     background-size: cover;
 }
 .skills-icons {
@@ -288,6 +306,8 @@ menu-links:nth-child(3):hover ~ .line {
 .wrapper h2 {
     text-align: left;
     color: #fff;
+    border: solid;
+    border-color: #66a3ff
 }
 .skill_line {
     height: 25px;
@@ -406,11 +426,11 @@ menu-links:nth-child(3):hover ~ .line {
 .work-img-1 {
  background:
     linear-gradient(
-      rgba(0, 0, 0, 0.50),
+      rgba(241, 15, 15, 0.5),
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../img/Star.jpg);
+    url(../img/benton.png);
 }
 
 .work-img-2 {
@@ -420,7 +440,7 @@ menu-links:nth-child(3):hover ~ .line {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../img/Burger.jpeg);
+    url(../img/49cbaf3b-8b47-44d2-afec-c6a7aabddf3c.png);
 }
 
 .work-img-3 {
@@ -430,8 +450,19 @@ menu-links:nth-child(3):hover ~ .line {
       rgba(0, 0, 0, 0.10)
     ),
     /* bottom, image */
-    url(../img/Nerdy.jpeg), no-repeat;
+    url(../img/NerdyTalkTrivia.jpg);
 }
+
+.work-img-4 {
+    background:
+       linear-gradient(
+         rgba(0, 0, 0, 0.50),
+         rgba(0, 0, 0, 0.10)
+       ),
+       /* bottom, image */
+       url(../img/StarSocial.png);
+}
+
 
 
 
@@ -455,11 +486,13 @@ menu-links:nth-child(3):hover ~ .line {
 .work-info h3 {
     font-family: 'Caveat Brush', cursive;
     font-weight: 400;
-	color: #fff;
+    color: #fff;
+    text-shadow: 1px 1px .5px #000;
 	font-size: 42px;
 	margin: 0 30px;
 	padding: 100px 0 0 0;
-	line-height:1.5;
+    line-height:1.5;
+
 }
 
 .work-info p {
@@ -470,7 +503,10 @@ menu-links:nth-child(3):hover ~ .line {
 	font-size: 15px;
 	line-height:2;
 }
-
+.work-info button {
+    border-radius: 25px;
+    color: #66a3ff;
+}
 .fp-slidesNav{
     position: absolute;
     z-index: 4;
