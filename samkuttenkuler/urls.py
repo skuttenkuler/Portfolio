@@ -21,4 +21,5 @@ urlpatterns = [
     url(r"^$", views.HomePage.as_view(), name="home"),
     url(r"^portfolio/",views.PortfolioPage.as_view(), name="portfolio"),
     url('admin/', admin.site.urls),
+
 ]

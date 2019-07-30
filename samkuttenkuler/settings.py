@@ -26,7 +26,7 @@ SECRET_KEY = ')rnf0-g+5s^oz8rdz-!h8$oh#804btl3w25(k(jr(y3$q469$y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio2.us-west-2.elasticbeanstalk.com', '172.31.23.55']
+ALLOWED_HOSTS = ['portfolio2.us-west-2.elasticbeanstalk.com', '172.31.23.55', '127.0.0.1']
 
 
 # Application definition
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sendemail.apps.SendemailConfig',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +70,13 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'samkuttenkuler.wsgi.application'
 
+# EMAIL BACKEND
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sam.kuttenk@gmail.com'
+EMAIL_HOST_PASSWORD = 'Ronicobi2'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases

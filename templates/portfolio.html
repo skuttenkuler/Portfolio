@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 {% load staticfiles %}
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -125,10 +127,10 @@
                             </li>
                             <li>
                                 <div class="work-box work-img-4">
-                                    <a href="//github.com/skuttenkuler/Star-Social/">
+                                    <a href="//www.github.com/skuttenkuler/Star-Social/">
                                         <div class="work-info">
                                             <h3>Star Social</h3>
-                                            <button><a href="//github.com/skuttenkuler/Star-Social/"></a>Code: Star Social</button>
+                                            <button><a href="//www.github.com/skuttenkuler/Star-Social/" target="_blank"></a>Social Media Project</button>
                                         </div>
                                     </a>
                                 </div>
@@ -157,24 +159,26 @@
                                 </div>
                             <div class="col-md-6 col-sm-6">
                                     <div class="contact-right">
-                                            <form method="POST">
+                                        <div>
+                                            <form>
+                                                {% csrf_token %}
                                                 <div class="form-group">
 
                                                     <label><h4>Name:</h4> </label>
-                                                    <input class="form-control" type="text" placeholder="Your Name...">
+                                                        <input class="form-control" type="text" placeholder="Your Name..." value="{{ contact_name }}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label><h4>Email:</h4></label>
-                                                    <input class="form-control" type="email" placeholder="Your Email...">
+                                                        <input class="form-control" type="email" placeholder="Your Email..." value="{{ contact_email }}">
                                                 </div>
                                                 <div class="form-group">
                                                     <label><h4>Message:</h4></label>
-                                                    <textarea class="form-control" cols="30" rows="5"></textarea>
+                                                    <textarea class="form-control" cols="30" rows="5" value="{{ contact_message }}"></textarea>
                                                 </div>
-
-                                            </form>
-                                            <button href="#" class="btn btn-primary">Send</button>
+                                                <input value="send" type="reset" class="btn btn-primary"></button>
+                                                </form>
                                         </div>
+                                    </div>
                                 </div>
                         </div>
                     </div>
@@ -256,3 +260,5 @@
 
 </body>
 </html>
+
+
