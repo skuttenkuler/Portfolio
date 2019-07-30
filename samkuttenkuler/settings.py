@@ -26,7 +26,7 @@ SECRET_KEY = ')rnf0-g+5s^oz8rdz-!h8$oh#804btl3w25(k(jr(y3$q469$y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio2.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['portfolio2.us-west-2.elasticbeanstalk.com', '172.31.23.55']
 
 
 # Application definition
