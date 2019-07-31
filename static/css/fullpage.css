@@ -256,10 +256,10 @@ menu-links:nth-child(3):hover ~ .line {
     font-size: 150%;
     text-shadow: 2px 2px 1px #000;
 }
-.contact-right {
+.contact-form {
 
     width: 500px;
-    padding-top: 200px;
+    padding-top: 100px;
 
 }
 .contact-right h4{
@@ -268,9 +268,18 @@ menu-links:nth-child(3):hover ~ .line {
     text-shadow: 2px 2px 1px #000;
     font-size: 125%;
 }
-.contact-right button {
+.contact_form button {
     margin-left: 200px;
     font-size: 150%;
+    border-radius: 25PX;
+    color: #4d4dff;
+}
+.cbutton {
+    color: #4d4dff;
+    border-radius: 25px;
+}
+.message {
+    padding-bottom: 30px;
 }
 
 #workSection{
