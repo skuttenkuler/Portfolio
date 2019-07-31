@@ -16,10 +16,14 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from . import views
+from django.urls import path
 
 urlpatterns = [
     url(r"^$", views.HomePage.as_view(), name="home"),
     url(r"^portfolio/",views.PortfolioPage.as_view(), name="portfolio"),
     url('admin/', admin.site.urls),
+    url(r'^email/$', views.email, name="email"),
+    url(r'^thanks/$', views.thanks, name="thanks")
+
 
 ]
